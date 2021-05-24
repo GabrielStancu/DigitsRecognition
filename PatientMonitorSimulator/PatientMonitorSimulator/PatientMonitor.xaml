@@ -1,0 +1,91 @@
+﻿<Window x:Class="PatientMonitorSimulator.PatientMonitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatientMonitorSimulator"
+        mc:Ignorable="d"
+        Title="Patient Monitor" Height="750" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition/>
+                <RowDefinition Height="2.5*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="NIBP" Foreground="White" FontSize="24"/>
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="{Binding Nibp}" Foreground="Red" FontSize="60" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="SpO2" Foreground="White" FontSize="24"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="{Binding SpO2}" Foreground="Yellow" FontSize="60" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="2" Grid.Column="1" Content="Pulse" Foreground="White" FontSize="24"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding Pulse}" Foreground="Yellow" FontSize="60" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="RR" Foreground="White" FontSize="24"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="{Binding RR}" Foreground="Blue" FontSize="60" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="4" Grid.Column="1" Content="T" Foreground="White" FontSize="24"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding T}" Foreground="Green" FontSize="60" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <!--<Grid Grid.Row="1" Background="#0F0F2D">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" 
+                   Content="NIBP" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Border Grid.Row="0" Grid.Column="1" Background="White" CornerRadius="10" Margin="5,5,250, 5">
+                <TextBox Margin="5" BorderThickness="0" Text="{Binding Nibp}" VerticalAlignment="Center"/>
+            </Border>
+
+            <Label Grid.Row="1" Grid.Column="0" 
+                   Content="SpO2" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Border Grid.Row="1" Grid.Column="1" Background="White" CornerRadius="10" Margin="5,5,250, 5">
+                <TextBox Margin="5" BorderThickness="0" Text="{Binding SpO2}" VerticalAlignment="Center"/>
+            </Border>
+
+            <Label Grid.Row="2" Grid.Column="0" 
+                   Content="Pulse" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Border Grid.Row="2" Grid.Column="1" Background="White" CornerRadius="10" Margin="5,5,250, 5">
+                <TextBox Margin="5" BorderThickness="0" Text="{Binding Pulse}" VerticalAlignment="Center"/>
+            </Border>
+
+            <Label Grid.Row="3" Grid.Column="0" 
+                   Content="RR" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Border Grid.Row="3" Grid.Column="1" Background="White" CornerRadius="10" Margin="5,5,250, 5">
+                <TextBox Margin="5" BorderThickness="0" Text="{Binding RR}" VerticalAlignment="Center"/>
+            </Border>
+
+            <Label Grid.Row="4" Grid.Column="0" 
+                   Content="T" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Border Grid.Row="4" Grid.Column="1" Background="White" CornerRadius="10" Margin="5,5,250, 5">
+                <TextBox Margin="5" BorderThickness="0" Text="{Binding T}" VerticalAlignment="Center"/>
+            </Border>
+        </Grid>-->
+    </Grid>
+</Window>

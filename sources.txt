@@ -1,0 +1,8 @@
+https://docs.opencv.org/master/d0/d72/tutorial_py_knn_index.html
+https://stackoverflow.com/questions/23506105/extracting-text-opencv
+https://www.ccoderun.ca/programming/doxygen/opencv/classcv_1_1ml_1_1KNearest.html#aeb25a75f438864fb25af182fb4b1b96f
+https://stackoverflow.com/questions/28035484/opencv-3-knn-implementation
+https://answers.opencv.org/question/90667/how-to-implement-k-nearest-neighbour/
+https://stackoverflow.com/questions/9413216/simple-digit-recognition-ocr-in-opencv-python
+https://github.com/MicrocontrollersAndMore/OpenCV_3_KNN_Character_Recognition_Cpp/blob/master/GenData/GenData.cpp
+https://www.youtube.com/watch?v=CK0OCeCN9zg
